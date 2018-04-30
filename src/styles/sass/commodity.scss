@@ -1,0 +1,45 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-23 19:28:24
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-27 14:49:30
+*/
+@import 'compass/css3/box-sizing', 'placeholder', 'compass/css3/flexbox';
+.commodity {
+	@extend %width;
+	@include box-sizing(border-box);
+	padding: 0 20px;
+	.table-dark {
+		background: #2b2e33;
+		a {
+			color: #fff;
+		}
+		.id {
+			padding-left: 25px;
+		}
+		.name,
+		.sub-title {
+			@extend %width;
+			display: inline-block;
+		}
+		.on-sale,
+		.down,
+		.see {
+			margin-right: 8px;
+		}
+		.left-right {
+			@extend %width;
+			@include display-flex;
+			@include justify-content(space-between);
+		}
+		.btn {
+			padding: 2px 8px;
+			font-size: .88rem;
+			margin-right: 7px;
+		}
+		.see,
+		.edit {
+			cursor: pointer;
+		}
+	}
+}

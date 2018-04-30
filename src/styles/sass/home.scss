@@ -1,0 +1,52 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-22 14:32:23
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-23 15:49:17
+*/
+@import 'compass/css3/flexbox',
+'compass/css3/transform',
+'compass/css3/transition';
+.home-content {
+	padding: 0 20px;
+	@include display-flex;
+	@include justify-content(space-between);
+	a {
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+			color: #606060;
+		}
+	}
+	.m-block {
+		width: 30%;
+		height: 35vh;
+		@include display-flex;
+		@include justify-content(center);
+		@include align-items(center);
+		@include transition(all 0.3s);
+		.count,
+		.txt {
+			margin: 0;
+			text-align: center;
+		}
+		.count {
+			font-size: 3rem;
+		}
+		.txt .fa {
+			margin-right: 5px;
+		}
+		&:hover {
+			@include transform(scale(1.03));
+		}
+	}
+	.orange {
+		background: orange;
+	}
+	.blue {
+		background: #327dff;
+	}
+	.green {
+		background: #0ce449;
+	}
+}

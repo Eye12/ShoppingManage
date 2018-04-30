@@ -1,0 +1,60 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-22 14:32:23
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-23 15:49:17
+*/
+.home-content {
+  padding: 0 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.home-content a {
+  color: #fff;
+}
+.home-content a:hover {
+  text-decoration: none;
+  color: #606060;
+}
+.home-content .m-block {
+  width: 30%;
+  height: 35vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.home-content .m-block .count,
+.home-content .m-block .txt {
+  margin: 0;
+  text-align: center;
+}
+.home-content .m-block .count {
+  font-size: 3rem;
+}
+.home-content .m-block .txt .fa {
+  margin-right: 5px;
+}
+.home-content .m-block:hover {
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+.home-content .orange {
+  background: orange;
+}
+.home-content .blue {
+  background: #327dff;
+}
+.home-content .green {
+  background: #0ce449;
+}

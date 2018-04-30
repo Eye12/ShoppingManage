@@ -1,0 +1,44 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-28 17:32:01
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-29 13:13:22
+*/
+@import 'compass/css3/box-sizing',
+'placeholder';
+.category-manage {
+    @include box-sizing(border-box);
+    @extend %width-height-a;
+    padding: 0 20px;
+    .table-dark th,
+    .table-dark thead th,
+    .commodity .table-dark th,
+    .commodity .table-dark thead th {
+        background: #2b2e33;
+    }
+    .revise-name {
+    	margin-right: 10px;
+    }
+	.revise-name,
+    .check-child {
+    	cursor: pointer;
+    }
+    .header{
+        width: inherit;
+        position: relative;
+        height: 38px;
+        line-height: 38px;
+        .add-new {
+            position: absolute;
+            right: 0;
+            height: 38px;
+            .fa {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+.hid {
+    display: none;
+}

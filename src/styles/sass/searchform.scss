@@ -1,0 +1,45 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-24 11:38:14
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-25 20:41:23
+*/
+
+@import 'compass/css3/box-sizing' ,'compass/css3/box-shadow', 'compass/css3/flexbox';
+.search-form {
+    @include box-sizing(border-box);
+    @include display-flex;
+    @include justify-content(space-between);
+    padding-bottom: 10px;
+    input::-webkit-input-placeholder {
+        color: #c7c7c7;
+    }
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #c7c7c7;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #c7c7c7;
+    }
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #c7c7c7;
+    }
+    .btn {
+        padding: 4px 10px;
+    }
+    .form-control:focus,
+    .btn-primary:focus {
+		@include box-shadow(0 0 0 1px rgba(0,123,255,.25));
+    }
+    .form-row {
+        width: 80%;
+    }
+    .add-new {
+        height: 35px;
+        .fa-plus {
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-28 17:32:01
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-29 13:13:22
+*/
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:41:06
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-19 18:44:34
+*/
+.category-manage {
+  width: 100%;
+}
+
+.category-manage {
+  height: auto;
+}
+
+.category-manage {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.category-manage .table-dark th,
+.category-manage .table-dark thead th,
+.category-manage .commodity .table-dark th,
+.category-manage .commodity .table-dark thead th {
+  background: #2b2e33;
+}
+.category-manage .revise-name {
+  margin-right: 10px;
+}
+.category-manage .revise-name,
+.category-manage .check-child {
+  cursor: pointer;
+}
+.category-manage .header {
+  width: inherit;
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+}
+.category-manage .header .add-new {
+  position: absolute;
+  right: 0;
+  height: 38px;
+}
+.category-manage .header .add-new .fa {
+  margin-right: 6px;
+}
+
+.hid {
+  display: none;
+}

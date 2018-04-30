@@ -1,0 +1,13 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-23 17:03:05
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-23 17:04:10
+*/
+.pagination {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}

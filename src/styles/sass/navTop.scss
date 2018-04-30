@@ -1,0 +1,50 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:08:57
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-24 19:16:07
+*/
+@import "compass/css3/box-shadow","placeholder", 
+"compass/css3/inline-block", "compass/css3/box-sizing";
+.nav-top {
+	line-height: 44px;
+	@include box-shadow(0 1px 5px 1px rgba(0,0,0,.15));
+	position: fixed;
+	@extend %width-height-a;
+	background: #fff;
+    z-index: 101;
+    .fa {
+        color: #666;
+        font-size: 14.5px;
+    }
+    .fa-caret-down {
+        margin-left: 4px;
+    }
+    .nav-item {
+        position: relative;
+        &:hover>.dropdown {
+            @include inline-block;
+        }
+        .txt {
+            margin-right: 10px;
+            color: #666;
+        }
+        .dropdown {
+            color: #666;
+            cursor: pointer;
+            font-size: .95rem;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: #fff;
+            width: 100%;
+            border: 1px solid rgba(0,0,0,.1);
+            @include box-sizing(border-box);
+            padding-left: 18px;
+            display: none;
+            .fa-sign-out {
+                margin-right: 10px;
+            }
+        }
+    }
+}

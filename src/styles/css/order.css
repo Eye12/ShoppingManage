@@ -1,0 +1,32 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-29 16:30:13
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-29 17:03:16
+*/
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:41:06
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-19 18:44:34
+*/
+.order-list {
+  width: 100%;
+}
+
+.order-list {
+  height: auto;
+}
+
+.order-list {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.order-list .table-dark th,
+.order-list .table-dark thead th,
+.order-list .commodity .table-dark th,
+.order-list .commodity .table-dark thead th {
+  background: #2b2e33;
+}

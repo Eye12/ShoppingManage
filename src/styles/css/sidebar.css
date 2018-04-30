@@ -1,0 +1,61 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:57:49
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-24 19:16:40
+*/
+.side-bar {
+  width: 21%;
+  position: fixed;
+  color: #fff;
+  background: #2b2e33;
+  z-index: 102;
+}
+.side-bar .list-group-item:first-child,
+.side-bar .list-group-item:last-child {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.side-bar .list-group-item:first-child {
+  line-height: 35px;
+  background: #32323a;
+  font-weight: 700px;
+  font-size: 30px;
+}
+.side-bar .list-group-item:first-child .span-txt {
+  color: #2DAFCB;
+}
+.side-bar .list-group-item:first-child:hover {
+  color: #2DAFCB;
+}
+.side-bar .list-group-item {
+  background: transparent;
+  border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+  line-height: 30px;
+}
+.side-bar .fa {
+  font-size: .95rem;
+}
+.side-bar .txt {
+  margin-left: 10px;
+}
+.side-bar .fa-shopping-bag:before {
+  font-size: 12px;
+}
+.side-bar .fa-th-large:before,
+.side-bar .fa-check-square-o:before {
+  font-size: 14px;
+}
+.side-bar .fa-user-o:before {
+  font-size: 13.5px;
+}
+.side-bar .list-group-item.active {
+  border-color: transparent;
+}
+.side-bar .active {
+  background: #2DAFCB;
+}
+.side-bar a {
+  color: #fff;
+}

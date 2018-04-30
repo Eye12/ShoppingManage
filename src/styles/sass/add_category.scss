@@ -1,0 +1,35 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-28 19:56:26
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-28 20:31:03
+*/
+@import 'compass/css3/box-sizing',
+'placeholder',
+'compass/css3/box-shadow';
+.add-category {
+	@include box-sizing(border-box);
+	@extend %width-height-a;
+	overflow: hidden;
+	padding-left: 26px;
+	.add-form {
+		@include box-sizing(border-box);
+		@extend %width-height-a;
+
+		.ipt {
+			margin-left: -80px;
+		}
+		.form-control:focus,
+		.btn-primary:focus {
+			@include box-shadow(0 0 0 1px rgba(0,123,255,.5));
+		}
+		.err{
+			color: red;
+			line-height: 38px;
+			display: none;
+		}
+		.show {
+			display: inline-block;
+		}
+	}
+}

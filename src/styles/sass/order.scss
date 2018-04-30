@@ -1,0 +1,19 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-29 16:30:13
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-29 17:03:16
+*/
+@import 'compass/css3/box-sizing',
+'placeholder';
+.order-list {
+    @include box-sizing(border-box);
+    @extend %width-height-a;
+    padding: 0 20px;
+    .table-dark th,
+    .table-dark thead th,
+    .commodity .table-dark th,
+    .commodity .table-dark thead th {
+        background: #2b2e33;
+    }
+}

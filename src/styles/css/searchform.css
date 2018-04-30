@@ -1,0 +1,49 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-24 11:38:14
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-25 20:41:23
+*/
+.search-form {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.search-form input::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+.search-form input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c7c7c7;
+}
+.search-form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c7c7c7;
+}
+.search-form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c7c7c7;
+}
+.search-form .btn {
+  padding: 4px 10px;
+}
+.search-form .form-control:focus,
+.search-form .btn-primary:focus {
+  -moz-box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.25);
+}
+.search-form .form-row {
+  width: 80%;
+}
+.search-form .add-new {
+  height: 35px;
+}
+.search-form .add-new .fa-plus {
+  margin-right: 8px;
+}

@@ -1,0 +1,96 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-21 15:53:49
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-22 11:44:34
+*/
+
+@import 'placeholder',
+'compass/css3/box-sizing',
+'compass/css3/flexbox',
+'compass/css3/border-radius',
+'compass/css3/box-shadow';
+.login-container {
+    @extend %width;
+    height: 100vh;
+    background: rgba(0, 0, 0, .75);
+    position: relative;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    .contents {
+        width: 30%;
+        height: auto;
+        background: #fff;
+        @include box-sizing(border-box);
+        @include border-radius(2px);
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        .title {
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 55px;
+            border-bottom: 1px dotted rgba(0,0,0,.1);
+            letter-spacing: .5px;
+        }
+        .login-form {
+            @include box-sizing(border-box);
+            padding: 10px 20px 15px;
+            .form-control:focus {
+            	@include box-shadow(0 0 0 0.05rem rgba(0,123,255,.25));
+            }
+            input::-webkit-input-placeholder {
+                color: #cbcbcb;
+                font-size: .9rem;
+            }
+            input::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #cbcbcb;
+                font-size: .9rem;
+            }
+            input:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #cbcbcb;
+                font-size: .9rem;
+            }
+            input:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #cbcbcb;
+                font-size: .9rem;
+            }
+            .form-group {
+                @include display-flex;
+                @include justify-content(space-between);
+            }
+            .label-for {
+                width: 17%;
+                @include display-flex;
+                @include align-items(center);
+                @include justify-content(flex-end);
+                margin-bottom: 0;
+                letter-spacing: .5px;
+            }
+            .form-control {
+                width: 80%
+            }
+            .btn-primary {
+                width: 26%;
+                margin-left: (100%-26%)/2;
+            }
+            .btn-primary:focus,
+            .btn:focus {
+                box-shadow: none;
+            }
+            .propt {
+                text-align: center;
+                margin-top: 20px;
+                display: none;
+            }
+            .propt-show {
+                display: block;
+            }
+            .error {
+                color: red;
+            }
+        }
+    }
+}

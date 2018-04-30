@@ -1,0 +1,20 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 21:36:33
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-23 18:03:09
+*/
+@import 'placeholder', 'compass/css3/box-sizing';
+.content {
+	@extend %width-height-a;
+	padding-top: 60px;
+	padding-left: 21%;	
+	@include box-sizing(border-box);
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	.title {
+		font-size: 2.4rem;
+		padding: 15px 20px;
+		letter-spacing: 1px;
+		margin-bottom: 0;
+	}
+}

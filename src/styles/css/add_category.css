@@ -1,0 +1,49 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-28 19:56:26
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-28 20:31:03
+*/
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:41:06
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-19 18:44:34
+*/
+.add-category, .add-category .add-form {
+  width: 100%;
+}
+
+.add-category, .add-category .add-form {
+  height: auto;
+}
+
+.add-category {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 26px;
+}
+.add-category .add-form {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.add-category .add-form .ipt {
+  margin-left: -80px;
+}
+.add-category .add-form .form-control:focus,
+.add-category .add-form .btn-primary:focus {
+  -moz-box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.5);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.5);
+}
+.add-category .add-form .err {
+  color: red;
+  line-height: 38px;
+  display: none;
+}
+.add-category .add-form .show {
+  display: inline-block;
+}

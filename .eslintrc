@@ -1,0 +1,40 @@
+{
+    "root": true,
+    "extends": "standard",
+    "plugins": ["html", "react"],
+    "env":
+    {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "$": true
+    },
+    "parser": "babel-eslint",
+    "rules":
+    {
+        "eol-last": "off",
+        "space-before-function-paren": ["error", "never"],
+        "indent": 0,
+        "no-tabs": "off",
+        "semi": "off",
+        "no-unused-vars": 0,
+        "no-mixed-spaces-and-tabs": 0,
+        "comma-dangle": 1,
+        "quotes": [1, "single"],
+        "no-undef": 1,
+        "global-strict": 0,
+        "no-extra-semi": 1,
+        "no-underscore-dangle": 0,
+        "no-trailing-spaces": [1,
+        {
+            "skipBlankLines": true
+        }],
+        "no-unreachable": 1,
+        "no-console": "off",
+        "one-var": "off",
+        "spaced-comment": "off",
+        "no-eval": "off"
+    }
+}

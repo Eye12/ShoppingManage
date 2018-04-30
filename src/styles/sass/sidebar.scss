@@ -1,0 +1,62 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:57:49
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-24 19:16:40
+*/
+
+@import "compass/css3/border-radius";
+.side-bar {
+    width: 21%;
+    position: fixed;
+    color: #fff;
+    background: #2b2e33;
+    z-index: 102;
+    .list-group-item:first-child,
+    .list-group-item:last-child {
+        @include border-radius(0);
+    }
+    .list-group-item:first-child {
+        line-height: 35px;
+        background: #32323a;
+        font-weight: 700px;
+        font-size: 30px;
+        .span-txt {
+            color: #2DAFCB;
+        }
+        &:hover {
+            color: #2DAFCB;
+        }
+    }
+    .list-group-item {
+        background: transparent;
+        border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+        line-height: 30px;
+    }
+    .fa {
+        font-size: .95rem;
+    }
+    .txt {
+        margin-left: 10px;
+    }
+
+    .fa-shopping-bag:before {
+        font-size: 12px;
+    }
+    .fa-th-large:before,
+    .fa-check-square-o:before {
+        font-size: 14px;
+    }
+    .fa-user-o:before {
+        font-size: 13.5px;
+    }
+    .list-group-item.active {
+        border-color: transparent;
+    }
+    .active {
+        background: #2DAFCB;
+    }
+    a {
+        color: #fff;
+    }
+}

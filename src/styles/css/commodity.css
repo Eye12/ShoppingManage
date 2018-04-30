@@ -1,0 +1,56 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-23 19:28:24
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-27 14:49:30
+*/
+/*
+* @Author: lle_wang
+* @Date:   2018-04-19 18:41:06
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-19 18:44:34
+*/
+.commodity, .commodity .table-dark .name,
+.commodity .table-dark .sub-title, .commodity .table-dark .left-right {
+  width: 100%;
+}
+
+.commodity {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.commodity .table-dark {
+  background: #2b2e33;
+}
+.commodity .table-dark a {
+  color: #fff;
+}
+.commodity .table-dark .id {
+  padding-left: 25px;
+}
+.commodity .table-dark .name,
+.commodity .table-dark .sub-title {
+  display: inline-block;
+}
+.commodity .table-dark .on-sale,
+.commodity .table-dark .down,
+.commodity .table-dark .see {
+  margin-right: 8px;
+}
+.commodity .table-dark .left-right {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.commodity .table-dark .btn {
+  padding: 2px 8px;
+  font-size: .88rem;
+  margin-right: 7px;
+}
+.commodity .table-dark .see,
+.commodity .table-dark .edit {
+  cursor: pointer;
+}

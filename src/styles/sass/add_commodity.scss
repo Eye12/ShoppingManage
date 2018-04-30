@@ -1,0 +1,87 @@
+/*
+* @Author: lle_wang
+* @Date:   2018-04-25 20:58:18
+* @Last Modified by:   lle_wang
+* @Last Modified time: 2018-04-27 16:42:59
+*/
+
+@import 'compass/css3/box-sizing',
+'compass/css3/box-shadow',
+'compass/css3/inline-block',
+'compass/css3/flexbox',
+'placeholder';
+.add-commodity {
+    @include box-sizing(border-box);
+    padding-left: 20px;
+    padding-top: 6px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .add-form {
+        .col-sm-2 {
+            max-width: 11%;
+            font-size: 1.1rem;
+        }
+        .ipt {
+            margin-left: -20px;
+            button {
+                background: #007bff;
+                border: 1px solid #007bff;
+                color: #fff;
+            }
+        }
+        .form-control:focus,
+        .btn-primary:focus {
+            @include box-shadow(0 0 0 1px rgba(0, 123, 255, .25));
+        }
+        input::-webkit-input-placeholder {
+            color: #d4d4d4;
+        }
+        input::-ms-input-placeholder {
+            color: #d4d4d4;
+        }
+        input::-moz-placeholder {
+            color: #d4d4d4;
+        }
+        input:-moz-placeholder {
+            color: #d4d4d4;
+        }
+        .img-item {
+            @include inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px dotted #c0c0c0;
+            padding: 3px;
+            margin-bottom: 6px;
+            margin-right: 5px;
+            position: relative;
+            .upload-imgs,
+            .close {
+               @extend %width-height;
+            }
+            .close {
+                @include display-flex;
+                @include justify-content(center);
+                @include align-items(center);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, .15);
+            }
+        }
+        .err-txt {
+            color: red;
+        }
+        .simditor-body {
+            overflow: auto;
+        }
+    }
+}
+
+.show {
+    @include inline-block;
+}
+
+.hid {
+    display: none;
+}
